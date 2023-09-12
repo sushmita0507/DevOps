@@ -1,0 +1,14 @@
+1. configure username
+        git config --global user.name "Sushmita Uddanna"
+
+2. configure email
+        git config --global user.email "sush@example.com"
+
+3. list configure
+        git config --list
+
+4. create new git project/repo
+        git init - empty repo with .git file
+
+5. create new branch
+        git checkout -b <branch_name>

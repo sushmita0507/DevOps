@@ -36,6 +36,7 @@
 12. Switch to other branch
         git switch branch_name
         git checkout branch_name
+        git checkout -t branch_name  -(-t) for to checkout in remote branch 
 13. Merge feature branch with main branch
         git merge feature_branch_name (present working branch - main)
         git merge main -m "merge message"

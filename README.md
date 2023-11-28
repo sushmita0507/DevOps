@@ -14,10 +14,9 @@
     1. Open Terminal and run command `sudo apt-get update`.  
     2. Install Java 8 or 11 using command `sudo apt-get -y install openjdk-8-jdk openjdk-8-jre`.  
     3. Follow guideline to install jenkins in ubantu/debian machine from    
-        `https://www.jenkins.io/doc/book/installing/linux/#debianubuntu-`
+        https://www.jenkins.io/doc/book/installing/linux/#debianubuntu-
     4. Start Jenkins using `sudo systemctl start jenkins`.
     5. Check status using `sudo systemctl status jenkins`.
     6. Enable Jenkins Auto `sudo systemctl enable jenkins`.
     7. Allow ingress traffic on node port 8080 either via security group, firewall or inbound traffic in Cloud platform. 
     8. open web browser on ipaddress:8080
-    

@@ -1,0 +1,95 @@
+ls - list files and directories
+options : -l long, -a hiden, -r reverse -d directory, -i inode (index of each file), -I ignore pattern, -R recursive, -s allocated size, -S sort, -t time/date, ~ home dir, ~/.. parent dir of user home dir
+
+mkdir - make directories.
+options  : -p no error if existing, make parent directories as needed
+
+cd - change directory
+options : cd . current directory, cd .. parent of curent directory
+
+pwd - present working directory
+options : -W print the Win32 value of the physical directory.
+
+cp - copy files/directories
+options : -R recursive, -u update
+
+mv - move file from 1 to other directory
+options : 
+
+rm - remove file/directory
+options : -f force -r recursive -d empty dir, -i prompt before remove, -I prompt before 3 files
+
+cat -concatenate - display the contents of file
+
+less - concatenate and write
+options: less file1 url - to fine url then type /url to highligh the word
+
+head - writes first 10 lines of file
+options -5 (10-5)lines
+
+tail - writes last 10 lines of file 
+
+grep - search words, pattern 
+options: -i ignore case, -v display that don't match, -n precede with line no, -c print only total count of match
+
+wc - word count in file
+options -w word, -l lines -m count all characters
+
+Redirection STDIN(<), STDOUT(>), STDERR(2>)
+echo "Hello" > output.txt 
+cat list1.txt list2.txt > biglist.txt 
+echo "kiwi" >> biglist.txt
+
+sort - reads input from stdin 
+sort < biglist.txt > sorted_list 2> errors.txt 
+
+Wildcards
+* - match against none or more chars in file/dir
+? = match only one character in file 
+{pattern1 , pattern2} - matches the pattern ex: mkdir newdir{1,2,3}
+
+On-line manuals
+man wc
+whatis wc
+
+Change Access Rights (chmod)
+u g o a r w x + -
+go- : remove group owner Access
+a+ : add all Access
+ex: chmod go-rwx biglist.txt, chmod a+rw biglist.txt
+
+ps - info of process in foreground, background or be suspended
+sleep 10 - wait 10 secs
+jobs - list suspended & background processes
+fg %jobnumber - restart foreground a suspended process
+kill %jobnumber - kill job
+df - reports on space left on file system
+du - disk usage
+gzip - compress file
+gunzip - uncompress file
+file - returns the type of file it is ex: empty, ascii, binary etc etc
+history - returns used commands in terminal
+!! - last command used
+!-3 - last 3rd command used and its output 
+!5 - last 5 commands used 
+!grep - returns last command starting with grep 
+
+wget - used to download files from web & ftp sites
+env variables: start with $, ex: $HOME, $OSTYPE, $PATH
+
+.bashrc - script file exeuted whenever a new intrractive bash shell is started for a user
+which - shows full path to a command
+
+Compiling software packages
+1. locate and download the source code (avaible compressed)
+2. unpack the source code (unzip)
+3. compile the code
+4. install the resulting executable
+5. set path to the installation dir
+
+tar - unzip tar file
+options: -xvf , -zxvf for tar.gz , x extract, -v list files, -f use the following archive file.
+
+make - used to build the packages
+
+
